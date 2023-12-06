@@ -1,0 +1,1 @@
+insert into contact (email,nume,telefon,id) values ('matei@mail','matei','+40',-1);

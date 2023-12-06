@@ -1,0 +1,1 @@
+alter table contact add column telefon varchar(255);
