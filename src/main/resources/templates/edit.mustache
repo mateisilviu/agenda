@@ -1,5 +1,8 @@
 <html>
 <body>
+    {{#eroare}}
+        <h3>{{eroare}}</h3><br>
+    {{/eroare}}
     <form action="/edit" method="post">
         <input name="id" type="hidden" value="{{contact.id}}"></input>
         <label>nume</lable>
