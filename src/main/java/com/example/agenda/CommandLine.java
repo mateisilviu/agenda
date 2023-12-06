@@ -15,8 +15,9 @@ public class CommandLine implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Contact c1 = new Contact().setEmail("mail").setNume("name").setTelefon("072");
-        contactRepository.save(c1);
+        // Contact c1 = new
+        // Contact().setEmail("mail").setNume("name").setTelefon("072");
+        // contactRepository.save(c1);
 
     }
 

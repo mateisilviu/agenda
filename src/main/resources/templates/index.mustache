@@ -1,0 +1,18 @@
+<html>
+<body>
+    <table>
+        <tr>
+            <th>nume</th>
+            <th>email</th>
+            <th>telefon</th>
+        </tr>
+        {{#contacts}}
+        <tr>
+            <td>{{nume}}</td>
+            <td>{{email}}</td>
+            <td>{{#telefon}} {{telefon}} {{/telefon}}</td>
+        </tr>
+        {{/contacts}}
+    </table>
+</body>
+</html>
