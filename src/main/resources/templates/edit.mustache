@@ -1,0 +1,16 @@
+<html>
+<body>
+    <form action="/edit" method="post">
+        <input name="id" type="hidden" value="{{contact.id}}"></input>
+        <label>nume</lable>
+        <input name="nume" type="text" value="{{contact.nume}}"></input><br>
+        <label>email</lable>
+        <input name="email" type="text" value="{{contact.email}}"></input><br>
+        <label>telefon</lable>
+        <input name="telefon" type="text" value="{{contact.telefon}}"></input><br>
+        <button type="submit">Edit</button>
+    </form>
+    <br>
+    <a href="/index">home</a>
+</body>
+</html>

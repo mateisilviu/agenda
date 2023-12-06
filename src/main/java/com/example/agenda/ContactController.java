@@ -38,4 +38,17 @@ public class ContactController {
         return "redirect:/";
     }
 
+    @GetMapping("/edit")
+    public String editContact(@RequestParam Long id, Model model) {
+        model.addAttribute("contact", contactRepository.getReferenceById(id));
+        return "edit";
+    }
+
+    @PostMapping("/edit")
+    public String editContact(@RequestBody Contact entity, Model model) {
+        contactRepository.save(entity);
+        // return "redirect:/edit?id=" + entity.getId();
+        return "redirect:/";
+    }
+
 }

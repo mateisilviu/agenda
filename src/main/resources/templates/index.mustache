@@ -1,5 +1,6 @@
 <html>
 <body>
+    <a href ="/add"></a><br>
     <table>
         <tr>
             <th>nume</th>
@@ -11,8 +12,10 @@
             <td>{{nume}}</td>
             <td>{{email}}</td>
             <td>{{#telefon}} {{telefon}} {{/telefon}} {{^telefon}} necunoscut {{/telefon}}</td>
+            <td><a href="/edit?id={{id}}">Edit</a></td>
         </tr>
         {{/contacts}}
+        
     </table>
 </body>
 </html>
